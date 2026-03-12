@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <h1 class="calculator-header">My Calculator</h1>
+        
+        <div class="calculator">
+            <input type="text" id="display" readonly placeholder="0">
+            
+            <div class="buttons">
+                <button onclick="clearDisplay()" class="btn-clear span-three">C</button>
+                <button onclick="DisplayThis('/')" class="btn-operator">/</button>
+
+                <button onclick="DisplayThis('7')">7</button>
+                <button onclick="DisplayThis('8')">8</button>
+                <button onclick="DisplayThis('9')">9</button>
+                <button onclick="DisplayThis('*')" class="btn-operator">*</button>
+
+                <button onclick="DisplayThis('4')">4</button>
+                <button onclick="DisplayThis('5')">5</button>
+                <button onclick="DisplayThis('6')">6</button>
+                <button onclick="DisplayThis('-')" class="btn-operator">-</button>
+
+                <button onclick="DisplayThis('1')">1</button>
+                <button onclick="DisplayThis('2')">2</button>
+                <button onclick="DisplayThis('3')">3</button>
+                <button onclick="DisplayThis('+')" class="btn-operator">+</button>
+
+                <button onclick="DisplayThis('0')" class="span-two">0</button>
+                <button onclick="DisplayThis('.')">.</button>
+                <button onclick="calculate()" class="btn-equal">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
